@@ -1,0 +1,55 @@
+.btn {
+	background-color: $color-secondary;
+	color: $color-text;
+	padding: 1rem 2rem;
+	text-transform: capitalize;
+	border-radius: 5px;
+	font-weight: 100;
+	@include transformTransition;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	&__main {
+		border: 1px solid transparent;
+		@include transformTransition;
+		background-color: $color-secondary;
+
+		&:hover {
+			background-color: darken($color-secondary, 5%);
+		}
+	}
+
+	&__blue {
+		@include transformTransition;
+		background-color: $color-main;
+		border: 1px solid transparent;
+	}
+
+	// Transparent Button
+	&__clear {
+		@include transformTransition;
+		background-color: transparent;
+
+		&--blue {
+			color: $color-main;
+			border: 1px solid $color-main;
+
+			&:hover {
+				color: $color-text;
+				background-color: $color-main;
+			}
+		}
+
+		&--main {
+			color: $color-secondary;
+			border: 1px solid $color-secondary;
+
+			&:hover {
+				color: $color-text;
+				background-color: $color-secondary;
+			}
+		}
+	}
+}

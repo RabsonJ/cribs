@@ -1,0 +1,94 @@
+.footer {
+	color: $color-text;
+
+	a:hover {
+		text-decoration: underline;
+		color: $color-grey-light;
+	}
+
+	&__top {
+		background-color: $color-main;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		& > *:not(:last-child) {
+         margin-bottom: 4rem;
+         
+			@include media-query(phone) {
+				margin-bottom: 0;
+			}
+		}
+
+		@include media-query(phone) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		a:link,
+		a:visited {
+			color: $color-text;
+		}
+	}
+
+	&__company-name {
+		font-size: 3rem;
+		font-weight: 100;
+   }
+   
+   &__list-title {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $color-text;
+   }
+
+	&__links {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	// Bottom footer section
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		padding: 2rem;
+		background-color: darken($color-main, 4%);
+
+		& > * {
+			margin-bottom: 1.5rem;
+		}
+
+		@include media-query(phone) {
+			flex-direction: row;
+			margin-bottom: 0;
+		}
+	}
+
+	&__copyright,
+	&__credit {
+		color: $color-grey-light;
+		font-size: 1.4rem;
+	}
+
+	&__credit--name:link,
+	&__credit--name:visited {
+		color: $color-grey-light;
+		font-weight: bold;
+	}
+}
+
+.social-icons {
+	font-size: 2.5rem;
+
+	& > * {
+		color: $color-text;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+}

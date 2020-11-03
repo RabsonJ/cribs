@@ -1,0 +1,52 @@
+.contact-form {
+	width: 80%;
+	margin: 3rem auto 0 auto;
+
+	@include media-query(tab-land) {
+		width: 50%;
+	}
+
+	.btn {
+		display: block;
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: inherit;
+	}
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+	margin-bottom: 3rem;
+
+	label {
+		font-weight: bold;
+		font-size: 1.7rem;
+		text-transform: capitalize;
+		margin-bottom: .5rem;
+
+		&.required::after {
+			color: red;
+			content: ' *';
+         display: inline-block;
+         margin-left: .2rem;
+		}
+	}
+
+	input,
+	textarea {
+		padding: 1rem;
+		font-size: inherit;
+		font-family: inherit;
+		outline: none;
+		border: 2px solid $color-grey-light;
+	}
+
+	input:focus,
+	textarea:focus {
+		border: 2px solid $color-secondary;
+	}
+}

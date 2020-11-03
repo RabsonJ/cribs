@@ -1,0 +1,161 @@
+// ABOUT US
+.about-us {
+	overflow: hidden;
+	
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		grid-gap: 2rem;
+
+		@include media-query(tab-land) {
+			grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		}
+	}
+
+	&__text {
+		text-align: left;
+		width: 90%;
+
+		&--heading {
+			font-size: clamp(2.8rem, calc(5vw + .5rem), 3.5rem);
+			font-weight: 700;
+			font-family: $font-main;
+			color: $color-main;
+		}
+
+		.btn {
+			margin-top: 2rem;
+		}
+	}
+
+	&__img {
+		@include media-query(tab-land) {
+			order: 2;
+		}
+	}
+}
+
+// STATS
+.stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-gap: 2rem;
+	@include svgBackground;
+}
+
+.stat {
+	&__number {
+		font-size: 6rem;
+		font-family: $font-main;
+	}
+
+	&__text {
+		text-transform: capitalize;
+	}
+}
+
+// TESTIMONIALS
+.testimonials {
+	@include svgBackground;
+}
+
+.testimonial {
+	& > * {
+		margin-bottom: 1rem;
+	}
+
+	&-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	&__img {
+		margin: 2.5rem auto;
+		height: 15rem;
+		width: 15rem;
+		border-radius: 50%;
+		border: 2px solid $color-text;
+		padding: .5rem;
+	}
+
+	&__name {
+		text-transform: uppercase;
+		font-weight: 100;
+		color: #b3aeae;
+		margin-top: 2rem;
+
+		&::before {
+			content: '~';
+			margin-right: .5rem;
+		}
+	}
+
+	&__text {
+		font-weight: 100;
+	}
+}
+
+// CALL TO ACTION
+.cta {
+	background-color: $color-main;
+	color: $color-text;
+
+	& > * {
+		margin: 0 1rem 2rem 1rem;
+	}
+}
+
+// WORK WITH US
+.work-with-us {
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		grid-gap: 2rem;
+
+		@include media-query(tab-land) {
+			grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		}
+	}
+
+	&__text > *:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}
+
+// FEATURED BY
+.featured {
+	background-color: rgb(245, 245, 245);
+
+	&__text {
+		display: grid;
+		grid-template-columns: 1fr max-content 1fr;
+		grid-column-gap: 1.5rem;
+		align-items: center;
+		font-size: 1.7rem;
+		color: $color-grey-light;
+
+		&::before,
+		&::after {
+			content: "";
+			height: 1px;
+			display: block;
+			background-color: currentColor;
+		}
+	}
+
+	&__logos {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 3rem;
+		justify-items: center;
+		align-items: center;
+
+		img {
+			max-width: 100%;
+			filter: brightness(70%);
+		}
+	}
+}

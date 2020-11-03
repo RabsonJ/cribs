@@ -1,0 +1,51 @@
+@mixin transformTransition {
+    transition: transform .2s ease-in-out;
+}
+
+@mixin backgroundImagePosition {
+    background-attachment: fixed;
+	background-size: cover;
+    background-position: center;
+}
+
+@mixin boxShadow {
+    box-shadow: .3rem .5rem .8rem rgba(0, 0, 0, .2);
+}
+
+@mixin svgBackground {
+    color: $color-text;
+    background-color: #090d0f;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.17'%3E%3Ccircle fill='%23090d0f' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%230f1416' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%2313191c' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23161e23' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%231a2429' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%231d2930' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+	@include backgroundImagePosition;
+}
+ 
+ //MEDIA QUERY MANAGER
+ /*
+ 0 - 600px       phone
+ 600 - 900px     tablet portrait
+ 900 - 1200px    tablet landscape
+ 1200 - 1800px   is where our normal styles apply
+ 1800px +        big desktop
+ 
+ ORDER: Base + Typography > general layout + grid > page layout > components
+ $breakpoint argument choices
+ -phone
+ -tab-port
+ -tab-land
+ -big-desktop
+ 
+ 1em = 16px
+ */
+ @mixin media-query($breakpoint) {
+     @if $breakpoint == phone {
+         @media only screen and (min-width: 37.5em) {@content}; //600px
+     }
+     @if $breakpoint == tab-port {
+         @media only screen and (min-width: 50em) {@content};  //800px
+     }
+     @if $breakpoint == tab-land {
+         @media only screen and (min-width: 62.5em) {@content};  //1000px
+     }
+ }
+ 
+ 

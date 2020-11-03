@@ -1,0 +1,16 @@
+@import "./abstracts/variables";
+@import "./abstracts/utilities";
+@import "./abstracts/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/header";
+@import "./components/buttons";
+@import "./components/project-cards";
+@import "./components/service-cards";
+@import "./components/cards-work-with-us";
+@import "./components/footer";
+@import "./components/contact-form";
+
+@import "./pages/main";

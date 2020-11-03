@@ -1,0 +1,189 @@
+// The Logo
+.cribs {
+	color: $color-text;
+	display: flex;
+	align-items: center;
+	margin-left: 2rem;
+
+	&__icon {
+		font-size: 6rem;
+	}
+
+	&__name {
+		font-weight: 100;
+		text-transform: uppercase;
+		font-size: 5rem;
+	}
+}
+
+.header {
+	background-image: radial-gradient(#444, #111), url('../img/hero-img.jpg');
+	@include backgroundImagePosition;
+	background-blend-mode: multiply;
+	position: relative;
+	height: 100vh;
+
+	&__intro {
+		width: 95%;
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: #fff;
+
+		@include media-query(tab-port) {
+			width: 80%;
+		}
+
+		& > *:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__title {
+		font-size: clamp(3rem, calc(.5rem + 5vw), 4.2rem);
+		font-weight: 500;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+	}
+}
+
+// NAVBAR
+.nav {
+	display: flex;
+	position: fixed;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	z-index: 999;
+	@include boxShadow;
+
+	@include media-query(tab-port) {
+		justify-content: space-between;
+	}
+
+	&__scrolled {
+		background-color: $color-secondary;
+	}
+
+	&__unScrolled {
+		background-color: $color-nav;
+	}
+}
+
+.nav__scrolled .nav__list {
+	a:hover,
+	a:active {
+		color: $color-primary;
+	}
+}
+.nav__unScrolled .nav__list {
+	a:hover,
+	a:active {
+		color: $color-secondary;
+	}
+}
+
+.nav__list {
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	text-align: left;
+	padding-left: 1.5rem;
+	padding-bottom: 1rem;
+	transform: scale(1, 0);
+	transform-origin: top;
+	transition: transform 400ms ease-in-out;
+
+	@include media-query(tab-port) {
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding: 0;
+		width: auto;
+		transform: scale(1);
+	}
+
+	&--item {
+		padding: 1rem 0;
+		margin-right: 3rem;
+	}
+
+	&--link:link,
+	&--link:visited {
+		color: #fff;
+		padding-bottom: .8rem;
+		text-transform: uppercase;
+	}
+}
+
+.nav-toggle {
+	display: none;
+}
+
+.nav-toggle__label {
+	cursor: pointer;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 1.5rem;
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+
+	@include media-query(tab-port) {
+		display: none;
+	}
+
+	span,
+	span::before,
+	span::after {
+		display: block;
+		height: 2px;
+		width: 30px;
+		background: #fff;
+		border-radius: 5px;
+		position: relative;
+		transition: transform 400ms ease-in-out;
+	}
+
+	span::before,
+	span::after {
+		content: '';
+		position: absolute;
+	}
+
+	span::before {
+		bottom: 7px;
+	}
+
+	span::after {
+		top: 7px;
+	}
+}
+
+// Hamburger Menu is clicked
+.nav-toggle:checked ~  {
+	.nav__list {
+		transform: scale(1, 1);
+	}
+
+	.nav-toggle__label {
+		span {
+			transform: rotate(45deg);
+		}
+		span::before {
+			display: none;
+		}
+
+		span::after {
+			top: 0;
+			transform: rotate(-90deg);
+		}
+	}
+}
