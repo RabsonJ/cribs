@@ -78,13 +78,15 @@
 
 .nav__scrolled .nav__list {
 	a:hover,
-	a:active {
+	a:active,
+	.active {
 		color: $color-primary;
 	}
 }
 .nav__unScrolled .nav__list {
 	a:hover,
-	a:active {
+	a:active
+	.active {
 		color: $color-secondary;
 	}
 }

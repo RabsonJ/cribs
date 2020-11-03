@@ -1,0 +1,14 @@
+@import "./abstracts/variables";
+@import "./abstracts/utilities";
+@import "./abstracts/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/header";
+@import "./components/buttons";
+@import "./components/footer";
+@import "./components/gallery";
+
+@import "./pages/about";
+@import "./pages/main";
