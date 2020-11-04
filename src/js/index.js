@@ -3,7 +3,7 @@ const navbar = document.querySelector('.nav');
 const navlist = document.querySelector('.nav__list');
 
 const headerOptions = {
-   rootMargin: "-140px 0px 0px 0px"
+   rootMargin: "-200px 0px 0px 0px"
 };
 
 const headerObserver = new IntersectionObserver(function(entries, headerObserver) {
