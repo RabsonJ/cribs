@@ -1,0 +1,34 @@
+a:hover {
+   text-decoration: underline;
+}
+
+details {
+	margin: 1.5rem auto;
+   position: relative;
+
+   @include media-query(tab-land) {max-width: 85%;}
+
+	summary {
+		outline: none;
+		background-color: $color-grey-light;
+		border-left: 5px solid $color-secondary;
+		border-radius: 3px;
+      padding: 1.8rem 2.5rem;
+      
+      &:hover {
+         background-color: $color-primary;
+         color: $color-text;
+         cursor: pointer;
+      }
+	}
+
+	&[open] summary {
+		background-color: $color-primary;
+		color: $color-text;
+   }
+   
+   p {
+      padding: 1rem 3rem;
+      background-color: $color-card;
+   }
+}

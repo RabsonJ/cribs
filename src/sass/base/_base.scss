@@ -8,6 +8,11 @@
 	padding: 0;
 }
 
+::selection {
+	background-color: $color-primary;
+	color: $color-text;
+}
+
 html {
 	box-sizing: border-box;
 	font-size: 70%; // 10px/16px = 62.5% => 1rem = 10px
@@ -16,6 +21,8 @@ html {
 	@include media-query(phone) {
 		font-size: 62.5%;
 	}
+
+	@include media-query(desktop-large) {font-size: 75%;}
 }
 
 html,
