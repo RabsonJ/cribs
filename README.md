@@ -2,9 +2,8 @@
 
 *A new perspective to design*
 
-> Cribs is a website created for a fictional company **Cribs**. I designed and developed it for a friend and it was a great learning experience.
+> Cribs is a website created for a fictional company **Cribs.** I designed and developed it for a friend and it was a great learning experience.
 
----
 
 The live site can be found [here](https://cribs-home.netlify.app/)
 
@@ -23,17 +22,20 @@ The live site can be found [here](https://cribs-home.netlify.app/)
 
    contains the minified code
 
-  * 📦dist
+   ```
+  📦dist
    ┣ 📂css
    ┣ 📂img
    ┃ ┣ 📂vendors
    ┗ 📂js
+   ```
 
 * ##### `src`  folder
 
    contains the source files
 
-   * 📦src
+   ```
+    📦src
       ┣ 📂js
       ┗ 📂sass
       ┃ ┣ 📂abstracts
@@ -44,18 +46,21 @@ The live site can be found [here](https://cribs-home.netlify.app/)
       ┃ ┣ 📜faq.scss
       ┃ ┣ 📜main.scss
       ┃ ┗ 📜projects.scss
-   
+   ```
+
    The `components` subfolder holds all potentially reusable parts of the site and can exist independently. These can be copied and pasted anywhere even in a different project, provided the corresponding class is added to the `HTML`.
 
 * ##### root  files
 
-   *  ┣ 📜about.html
+   ```
+      ┣ 📜about.html
       ┣ 📜cribs-screenshot.png
       ┣ 📜faq.html
       ┣ 📜favicon.ico
       ┣ 📜index.html
       ┣ 📜projects.html
       ┗ 📜README.md
+   ```
  
 
 ## Contributing
