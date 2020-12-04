@@ -17,9 +17,8 @@
 }
 
 .header {
-	background-image: radial-gradient(#444, #111), url('../img/hero-img.jpg');
+	background-image: radial-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/hero-img.jpg');
 	@include backgroundImagePosition;
-	background-blend-mode: multiply;
 	position: relative;
 	height: 100vh;
 
