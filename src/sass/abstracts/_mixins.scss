@@ -3,9 +3,8 @@
 }
 
 @mixin backgroundImagePosition {
-    background-attachment: fixed;
-	background-size: cover;
     background-position: center;
+	background-size: cover;
 }
 
 @mixin boxShadow {
