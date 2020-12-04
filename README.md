@@ -1,11 +1,11 @@
-# CRIBS
+# 🏛️ CRIBS
 
 *A new perspective to design*
 
-> Cribs is a website created for a fictional company **Cribs.** I designed and developed it for a friend and it was a great learning experience.
+> Cribs is a website created for an imaginary architectural company **Cribs.** It was designed and developed for **Mr. Mushili Mubanga**, the owner of the idea.
 
 
-The live site can be found [here](https://cribs-home.netlify.app/)
+The live site can be found [here](https://www.cribsdesign.live)
 
 <p align="center">
   <img width="460" height="300" src="./cribs-screenshot.png">
@@ -15,6 +15,13 @@ The live site can be found [here](https://cribs-home.netlify.app/)
 * HTML
 * CSS (SCSS)
 * JavaScript
+
+## Third Party Libraries
+* [Animation On Scroll (AOS) Library](https://github.com/michalsnik/aos) for the scroll and fade animations
+
+* [purecounterjs](https://github.com/srexi/purecounterjs) for the counting animations
+
+* [Line Awesome](https://icons8.com/line-awesome) for the icons
 
 ## How The Project Is Set Up
 
@@ -67,4 +74,4 @@ The live site can be found [here](https://cribs-home.netlify.app/)
 This project is not open to contributions as it is an intellectual property belonging to someone else. 
 
 ## License
-The project can be used for private projects. You can preserve the project structure, markup and styles but **not** the content, e.g. the name, any body text or images (some images are from [pexels](www.pexels.com) and are therefore royalty free).
+The project can be used for private projects. You can preserve the project structure, markup and styles but **NOTE** the content, e.g. the name, any body text or images (some images are from [pexels](www.pexels.com) and are therefore royalty free).
