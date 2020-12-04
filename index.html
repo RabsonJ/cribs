@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Animation On Scroll -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- Line Awesome Icons -->
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 	<link rel="stylesheet" href="./dist/css/main.min.css">
 	<title>Cribs | A new perspective to design</title>
@@ -237,9 +240,9 @@
 			<!-- Content Start -->
 			<div class="work-with-us__content">
 				
-				<img src="./dist/img/vendors/work-with-us.png" alt="Work With Us">
+				<img src="./dist/img/vendors/work-with-us.png" alt="Work With Us" data-aos="slide-right">
 
-				<div class="work-with-us__text">
+				<div class="work-with-us__text" data-aos="slide-left">
 
 					<div class="card-work-with-us">
 						<i class="las la-piggy-bank icon-medium"></i>
@@ -292,7 +295,7 @@
 			<h3 class="h3 mb-2">We'd Love To <span class="highlighted">Hear From You</span></h3>
 			<p>You can contact us to set an appointment or simply make an enquiry. It's that easy!</p>
 
-			<form action="#" class="contact-form">
+			<form action="#" class="contact-form" data-aos="zoom-in-up">
 				<div class="input-group">
 					<label for="name" class="required">Name</label>
 					<input type="text" id="name" placeholder="Mary Jane" required>
@@ -307,7 +310,7 @@
 				</div>
 				<div class="input-group">
 					<label for="message" class="required">Message</label>
-					<textarea id="message" cols="28" rows="8" placeholder="Let us know how we can help"></textarea>
+					<textarea id="message" cols="28" rows="8" placeholder="Let us know how we can help" required></textarea>
 				</div>
 				<input type="checkbox" id="subscribe">
 				<label for="subscribe">Subscribe to Newsletter</label>
@@ -379,6 +382,9 @@
 		</div>
 		
 	</footer>
+
+	<!-- Animation On Scroll Library -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 	<!-- purecounter.js Library -->
 	<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>

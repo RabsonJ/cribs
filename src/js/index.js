@@ -25,3 +25,9 @@ const headerObserver = new IntersectionObserver(function(entries, headerObserver
 }, headerOptions);
 
 headerObserver.observe(header);
+
+// Animation On Scroll 
+AOS.init({
+	delay: 300,
+	duration: 700
+});
