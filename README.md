@@ -17,7 +17,7 @@ The live site can be found [here](https://www.cribsdesign.live)
 * JavaScript
 
 ## Third Party Libraries
-* [Animation On Scroll (AOS) Library](https://github.com/michalsnik/aos) for the scroll and fade animations
+* [Animation On Scroll (AOS)](https://github.com/michalsnik/aos) for the scroll and fade animations
 
 * [purecounterjs](https://github.com/srexi/purecounterjs) for the counting animations
 
@@ -74,4 +74,4 @@ The live site can be found [here](https://www.cribsdesign.live)
 This project is not open to contributions as it is an intellectual property belonging to someone else. 
 
 ## License
-The project can be used for private projects. You can preserve the project structure, markup and styles but **NOTE** the content, e.g. the name, any body text or images (some images are from [pexels](www.pexels.com) and are therefore royalty free).
+The project can be used for private projects. You can preserve the project structure, markup and styles but **NOT** the content, e.g. the name, any body text or images (some images are from [pexels](www.pexels.com) and are therefore royalty free).
