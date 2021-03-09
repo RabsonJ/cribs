@@ -68,10 +68,6 @@ The live site can be found [here](https://www.cribsdesign.live)
       ┣ 📜projects.html
       ┗ 📜README.md
    ```
- 
-
-## Contributing
-This project is not open to contributions as it is an intellectual property belonging to someone else. 
-
+   
 ## License
 The project can be used for private projects. You can preserve the project structure, markup and styles but **NOT** the content, e.g. the name, any body text or images (some images are from [pexels](www.pexels.com) and are therefore royalty free).
